@@ -11,7 +11,11 @@ import Container from "../../ui/container";
 
 import NavButton from "./NavButton";
 
-const navLinks = [{ href: "/pricing", label: "Pricing", isExternal: false }];
+const navLinks = [
+  { href: "/agents", label: "Agents", isExternal: false },
+  { href: "/docs", label: "Docs", isExternal: false },
+  { href: "/pricing", label: "Pricing", isExternal: false },
+];
 
 const Navbar = () => {
   const router = useRouter();
@@ -53,8 +57,8 @@ const Navbar = () => {
         <Link href="/" className="flex items-center space-x-2">
           <Image
             priority
-            width={25}
-            height={25}
+            width={30}
+            height={30}
             alt="Anvil Logo"
             src="/logo/logo-black.svg"
           />
