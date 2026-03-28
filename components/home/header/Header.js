@@ -20,7 +20,7 @@ const Header = () => {
 
           <HeaderTitle />
 
-          <p className="text-sm text-gray-600 max-w-lg -mt-6 px-4">
+          <p className="text-sm text-gray-600 max-w-lg -mt-4 lg:-mt-6 px-4">
             Build your own Web3 Agents and Automations without writing a single
             line of code. Simply chat to build your agent and deploy it in
             minutes.

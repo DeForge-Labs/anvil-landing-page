@@ -3,6 +3,7 @@ import { Lexend_Deca } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "@/components/home/navbar/Navbar";
+import CTA from "@/components/home/CTA";
 
 const lexendDeca = Lexend_Deca({
   subsets: ["latin"],
@@ -100,7 +101,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         <main className="flex-1 relative">{children}</main>
-        {/* <CTA /> */}
+        <CTA />
       </body>
     </html>
   );
