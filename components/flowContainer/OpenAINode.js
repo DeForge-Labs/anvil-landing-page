@@ -5,6 +5,7 @@ import renderOutputs from "./renderOutput";
 import TextAreaField from "./TextAreaField";
 import StandaloneField from "./StandaloneNode";
 import SelectField from "./SelectField";
+import TextField from "./TextField";
 
 export default function OpenAINode() {
   return (
@@ -15,7 +16,7 @@ export default function OpenAINode() {
         <CardHeader className="flex flex-row items-center justify-between space-y-0 border-b border-black/15 border-dashed px-4 py-0 mb-5 [.border-b]:pb-4">
           <CardTitle className="text-sm font-medium">
             <div className="flex items-center text-xs font-semibold">
-              OpenAI Chat
+              Transaction Execution
             </div>
           </CardTitle>
         </CardHeader>
@@ -29,26 +30,30 @@ export default function OpenAINode() {
 
           <SelectField
             field={{
-              name: "Model",
-              value: "gpt-3.5-turbo",
-              options: ["gpt-3.5-turbo", "gpt-4", "gpt-4o", "gpt-4o-mini"],
+              name: "Action",
+              value: "Swap",
+              options: ["Swap", "Mint", "Approve", "Transfer"],
             }}
-            currentValue={"gpt-4o-mini"}
+            currentValue={"Swap"}
           />
 
           <TextAreaField
-            field={{ name: "Query", value: "Ask a question" }}
+            field={{ name: "Query", value: "Execute a trade in plain English" }}
             currentValue={""}
           />
-          <TextAreaField
-            field={{ name: "System Prompt", value: "" }}
-            currentValue={
-              "Analyze the transaction. If it is a transfer transaction, prepare the transaction and return data. Otherwise, return 0x"
-            }
+
+          <TextField
+            field={{ name: "Amount", value: "" }}
+            currentValue={"0.5 ETH"}
           />
+          <TextField
+            field={{ name: "Maximum Slippage", value: "" }}
+            currentValue={"0.5%"}
+          />
+
           <StandaloneField
             input={{
-              name: "Tools",
+              name: "Wallet",
               type: "RAG",
             }}
           />

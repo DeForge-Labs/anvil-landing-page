@@ -22,7 +22,11 @@ const getResponsiveNodePositions = (width) => {
         type: "chatbotNode",
         position: { x: 150 * scale, y: 150 * scale },
       },
-      { id: "2", type: "kbNode", position: { x: 150 * scale, y: 380 * scale } },
+      {
+        id: "2",
+        type: "kbNode",
+        position: { x: 150 * scale, y: 600 * scale },
+      },
       {
         id: "3",
         type: "openaiNode",
@@ -42,7 +46,7 @@ const getResponsiveNodePositions = (width) => {
       type: "chatbotNode",
       position: { x: 250 * scale, y: 150 * scale },
     },
-    { id: "2", type: "kbNode", position: { x: 250 * scale, y: 380 * scale } },
+    { id: "2", type: "kbNode", position: { x: 250 * scale, y: 420 * scale } },
     {
       id: "3",
       type: "openaiNode",
@@ -101,9 +105,9 @@ function Flow() {
         {
           id: "2-3",
           source: "2",
-          sourceHandle: "output-Tool-RAG",
+          sourceHandle: "output-Pass-text",
           target: "3",
-          targetHandle: "input-Tools-RAG",
+          targetHandle: "input-Amount",
           type: "smoothstep",
           animated: true,
           style: { stroke: edgeColor, strokeWidth: stroke },

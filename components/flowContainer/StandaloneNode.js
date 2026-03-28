@@ -33,8 +33,8 @@ export default function StandaloneField({ input }) {
           ></div>
         </div>
         <div className="h-8 border border-black/50 rounded-sm bg-black/5 text-xs flex items-center justify-between w-full px-2">
-          {"Connected"}
-          <span className="text-xs text-black/60">Tool</span>
+          {"Main Wallet"}
+          <span className="text-xs text-black/60">Connected</span>
         </div>
       </div>
     </div>

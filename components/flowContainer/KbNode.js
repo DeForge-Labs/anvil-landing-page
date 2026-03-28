@@ -13,21 +13,21 @@ export default function KbNode() {
         <CardHeader className="flex flex-row items-center justify-between space-y-0 border-b border-black/15 border-dashed px-4 py-0 mb-5 [.border-b]:pb-4">
           <CardTitle className="text-sm font-medium">
             <div className="flex items-center text-xs font-semibold">
-              Prepare Transaction
+              Filter Condition
             </div>
           </CardTitle>
         </CardHeader>
         <CardContent className="p-3 py-0 space-y-4 -mt-2">
           {renderOutputs([
             {
-              name: "Tool",
-              type: "RAG",
+              name: "Pass",
+              type: "text",
             },
           ])}
 
           <TextField
-            field={{ name: "Function Name", value: "" }}
-            currentValue={"mint"}
+            field={{ name: "Liquidity Threshold", value: "" }}
+            currentValue={"> 50 ETH"}
           />
         </CardContent>
       </Card>

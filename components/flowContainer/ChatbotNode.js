@@ -2,6 +2,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import renderOutputs from "./renderOutput";
+import TextField from "./TextField";
 
 export default function ChatbotNode() {
   return (
@@ -12,17 +13,22 @@ export default function ChatbotNode() {
         <CardHeader className="flex flex-row items-center justify-between space-y-0 border-b border-black/15 border-dashed px-4 py-0 mb-5 [.border-b]:pb-4">
           <CardTitle className="text-sm font-medium">
             <div className="flex items-center text-xs font-semibold">
-              Watch Address
+              On-chain Event
             </div>
           </CardTitle>
         </CardHeader>
         <CardContent className="p-3 py-0 space-y-4 -mt-2">
           {renderOutputs([
             {
-              name: "Transaction",
+              name: "Event",
               type: "text",
             },
           ])}
+
+          <TextField
+            field={{ name: "Protocol", value: "" }}
+            currentValue={"Uniswap V3"}
+          />
         </CardContent>
       </Card>
     </div>

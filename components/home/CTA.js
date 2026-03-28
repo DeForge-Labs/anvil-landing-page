@@ -47,8 +47,8 @@ const CTA = () => {
         visiblybr={false}
         showGlow={false}
       >
-        <div className="w-2 h-2 bg-white absolute -top-1 -left-[4.5px] rotate-45"></div>
-        <div className="w-2 h-2 bg-white absolute -top-1 -right-[4.5px] rotate-45"></div>
+        <div className="w-2 h-2 bg-white absolute -top-1 -left-[4.5px]"></div>
+        <div className="w-2 h-2 bg-white absolute -top-1 -right-[4.5px]"></div>
 
         <Image
           alt="Anvil White Logo"
