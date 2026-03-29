@@ -13,7 +13,8 @@ import NavButton from "./NavButton";
 
 const navLinks = [
   { href: "/agents", label: "Agents", isExternal: false },
-  { href: "/docs", label: "Docs", isExternal: false },
+  { href: "https://docs.runanvil.com", label: "Docs", isExternal: true },
+  { href: "https://deforge.io", label: "Deforge", isExternal: true },
   { href: "/pricing", label: "Pricing", isExternal: false },
 ];
 

@@ -11,7 +11,7 @@ const lexendDeca = Lexend_Deca({
 });
 
 export const metadata = {
-  title: "Anvil: Web3 AI Agents and Automations in Minutes",
+  title: "Anvil: The Web3 Native Automation Platform",
   description:
     "Web3 AI Agents and automations built in minutes. Anvil lets you build and deploy powerful Web3 workflows without writing a single line of code.",
   keywords: [
@@ -37,7 +37,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Anvil: Web3 AI Agents and Automations in Minutes",
+    title: "Anvil: The Web3 Native Automation Platform",
     description:
       "Web3 AI Agents and automations built in minutes. Anvil lets you build and deploy powerful Web3 workflows without writing a single line of code.",
     url: "https://runanvil.com",
@@ -55,7 +55,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Anvil: Web3 AI Agents and Automations in Minutes",
+    title: "Anvil: The Web3 Native Automation Platform",
     description:
       "Web3 AI Agents and automations built in minutes. Anvil lets you build and deploy powerful Web3 workflows without writing a single line of code.",
     images: ["/logo/Cover.jpg"],

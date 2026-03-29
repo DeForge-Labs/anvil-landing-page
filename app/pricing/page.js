@@ -18,7 +18,7 @@ export async function generateMetadata() {
       title: "Pricing | Anvil - AI Agents & Automation Plans",
       description:
         "AI Agents and automation pricing for every scale. Get started with Anvil today.",
-      images: ["/logo/Pricing.png"],
+      images: ["/logo/Pricing.jpg"],
     },
   };
 }
